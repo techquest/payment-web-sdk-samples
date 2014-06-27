@@ -24,28 +24,62 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-      
-      <!--<script id="qtScript" type="text/javascript" src="https://sandbox.interswitchng.com/quickteller.js/v1" onload="Quickteller.initialize()"></script>-->
-      <script id="qtScript" type="text/javascript" src="http://localhost/quickteller.js/v1" onload="Quickteller.initialize()"></script>
+
+      <script id="qtScript" type="text/javascript" src="https://sandbox.interswitchng.com/quickteller.js/v1" onload="Quickteller.initialize()"></script>
+      <!--<script id="qtScript" type="text/javascript" src="http://localhost/quickteller.js/v1" onload="Quickteller.initialize()"></script>-->
       <script type="text/javascript">
           document.onreadystatechange = function () {
               if (document.readyState === "complete") {
                   Quickteller.checkout({
                       "clientId": "IKIAE22BC31777F88140D9A56A5FA4B5B2E4F0E43124",
-                      "paymentCode": "0482211997",
-                      "buttonSize": "medium",
-                      "redirectUrl": "http://localhost/BlueCups/Success.html",
-                      "amount": "5000",
+                      "paymentCode": "0480022817",
+                      "buttonSize": "small",
+                      "redirectUrl": "http://ilfs-ltd.com/BlueCups/success.html",
+                      "amount": "1000",
                       "customerId": "1234567890",
                       "mobileNumber": "08037119301",
                       "emailAddress": "banjilinks@yahoo.co.uk"
-                  }, "btn_div", function () {
+                  }, "btn_div_mini", function () {
                       //fn called before loading payment pop-up.
 
                   }, function (status) {
                       //fn called just before closing payment pop-up.
 
                   });
+
+                   Quickteller.checkout({
+							"clientId": "IKIAE22BC31777F88140D9A56A5FA4B5B2E4F0E43124",
+							"paymentCode": "0480022817",
+							"buttonSize": "small",
+							"redirectUrl": "http://ilfs-ltd.com/BlueCups/success.html",
+							"amount": "50000",
+							"customerId": "1234567890",
+							"mobileNumber": "08037119301",
+							"emailAddress": "banjilinks@yahoo.co.uk"
+						}, "btn_div_midi", function () {
+							//fn called before loading payment pop-up.
+
+						}, function (status) {
+				  	                        //fn called just before closing payment pop-up.
+
+	                    });
+
+	                   Quickteller.checkout({
+							"clientId": "IKIAE22BC31777F88140D9A56A5FA4B5B2E4F0E43124",
+							"paymentCode": "0480022817",
+							"buttonSize": "small",
+							"redirectUrl": "http://ilfs-ltd.com/BlueCups/success.html",
+							"amount": "1000000",
+							"customerId": "1234567890",
+							"mobileNumber": "08037119301",
+							"emailAddress": "banjilinks@yahoo.co.uk"
+						}, "btn_div_maxi", function () {
+							//fn called before loading payment pop-up.
+
+						}, function (status) {
+							//fn called just before closing payment pop-up.
+
+	                    });
 
               }
 
@@ -83,8 +117,8 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Welcome to BlueCups</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <h1>Welcome to BlueCups Coffee</h1>
+        <p>This is a sample app that shows you how to add QuickTeller Checkout to your Website. It is an attempt to make it very simple so that users do as little as possible when integrating payments to their Website.</p>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
@@ -93,19 +127,19 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><div id="btn_div"></div></p>
+          <h2>BlueCups Mini</h2>
+          <p>Our Mini BlueCups coffee is engineered to give you value for your money. It is really the lowest we can go for our high-class coffee. You wont get a tastier coffee for this price. We really didnt want to make this class of coffee, but we had to.</p>
+          <p><div id="btn_div_mini"></div></p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>BlueCups Midi</h2>
+          <p>Our Midi BlueCups coffee is a tasted, tested & trusted. George R. R. Martins drank this to create the seven kingdoms. However, story has it that at some time he mixed it with water, thats when he wrote Red Wedding.</p>
+          <p><div id="btn_div_midi"></div></p>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>BlueCups Maxi</h2>
+          <p>In fact, legend has it that Spiderman was not bitten by Spider but drank from the concoction of our Maxi BlueCups. Tywin Lanister drink this to get his confidence and he denied Tyrion a portion of this at birth.</p>
+          <p><div id="btn_div_maxi"></div></p>
         </div>
       </div>
 
